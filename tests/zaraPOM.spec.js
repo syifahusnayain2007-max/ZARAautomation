@@ -1,3 +1,5 @@
+const { chromium } = require('playwright');
+const browser = await chromium.launch({ headless: true });
 const { test, expect } = require('@playwright/test');
 const {POManager} = require ('../PageObject/POManager')
 test ("zara guest E2E checkout ", async ({page}) => {
